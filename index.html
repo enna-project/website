@@ -11,27 +11,52 @@
     <link href="./assets/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
-        padding-top: 60px;
-        padding-bottom: 40px;
+      padding-top: 60px;
+      padding-bottom: 40px;
       }
     </style>
-    <link href="enna/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+   <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+   
+    </style>
+
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="./assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="enna/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="enna/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="enna/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="enna/assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
   </head>
 
   <body>
-
+    <div class="content">
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -43,12 +68,13 @@
           <a class="brand" href="#">Enna Media Center</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#screenshots">Screenshots</a></li>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#documentation">Documentation</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#getit">Get It</a></li>
+              <li><a href="download.html">Download</a></li>
+              <li><a href="screenshots.html">Screenshots</a></li>
+              <li><a href="features.html">Features</a></li>
+              <li><a href="doc.html">Documentation</a></li>
+              <li><a href="developers.html">Developers</a></li>
+	      <li><a href="http://captainigloo.wordpress.com">Blog</a></li>
+              <li><a href="http://enna.geexbox.org/trac/">Tracker</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -56,58 +82,88 @@
     </div>
 
     <div class="container">
-
       <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Enna</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-      </div>
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2012</p>
-      </footer>
-
-    </div> <!-- /container -->
-
-    <!-- Le javascript
+    <!-- Carousel
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="enna/assets/js/jquery.js"></script>
-    <script src="enna/assets/js/bootstrap-transition.js"></script>
-    <script src="enna/assets/js/bootstrap-alert.js"></script>
-    <script src="enna/assets/js/bootstrap-modal.js"></script>
-    <script src="enna/assets/js/bootstrap-dropdown.js"></script>
-    <script src="enna/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="enna/assets/js/bootstrap-tab.js"></script>
-    <script src="enna/assets/js/bootstrap-tooltip.js"></script>
-    <script src="enna/assets/js/bootstrap-popover.js"></script>
-    <script src="enna/assets/js/bootstrap-button.js"></script>
-    <script src="enna/assets/js/bootstrap-collapse.js"></script>
-    <script src="enna/assets/js/bootstrap-carousel.js"></script>
-    <script src="enna/assets/js/bootstrap-typeahead.js"></script>
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./imgs/showcase1.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./imgs/showcase2.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="./imgs/showcase3.jpg" alt="">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
 
-  </body>
+      
+     
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="span4">
+        <h2>What is Enna ?</h2>
+        <p><p class="emp"> 
+          Enna is a Media Center application. Featuring a simple user interface,
+          Enna is based on the powerful <a href="http://enlightenment.org">Enlightenment Foundations Libraries</a> (EFL) as for its graphical user interface and <a href="http://libvalhalla.geexbox.org">libvalhalla</a> library as for multimedia playback and information retrieval.</p>
+      </div>
+      <div class="span4">
+        <h2>News</h2>
+	<h3>Enna for Maemo5</h3>
+        <p> 2010/03/21: Enna v0.4.0 is available for Nokia Maemo5 (N900 phones).<br/>
+          Check out the <a href="download.html">download</a>
+          page for installation instruction.
+	</p>
+	<h3>Enna v0.4.0</h3>
+	<p>2010/01/02: Enna first public stable release (v0.4.0) is available.
+          <br/>
+          Check it out on our <a href="download.html">download</a>
+          page, including sources and Ubuntu packages.
+	</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer>
+      <p>&copy; Enna Team 2005-20013</p>
+    </footer>
+    </div>
+
+
+
+<!-- Le javascript
+     ================================================== -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/bootstrap-transition.js"></script>
+<script src="./assets/js/bootstrap-alert.js"></script>
+<script src="./assets/js/bootstrap-modal.js"></script>
+<script src="./assets/js/bootstrap-dropdown.js"></script>
+<script src="./assets/js/bootstrap-scrollspy.js"></script>
+<script src="./assets/js/bootstrap-tab.js"></script>
+<script src="./assets/js/bootstrap-tooltip.js"></script>
+<script src="./assets/js/bootstrap-popover.js"></script>
+<script src="./assets/js/bootstrap-button.js"></script>
+<script src="./assets/js/bootstrap-collapse.js"></script>
+<script src="./assets/js/bootstrap-carousel.js"></script>
+<script src="./assets/js/bootstrap-typeahead.js"></script>
+<script src="./assets/js/bootstrap-carousel.js"></script>
+<script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+</script>
+<script src="./assets/js/holder/holder.js"></script>
+</body>
 </html>
 
